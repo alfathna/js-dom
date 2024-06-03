@@ -37,18 +37,28 @@
                 <div class="col">
                   <input
                     type="text"
+                    name="first_name"
+                    id="first_name" 
                     class="form-control"
                     placeholder="First Name"
                     aria-label="First name"
                   />
+                  <div class="invalid-feedback" id="first_name_validation">
+                    Masukan first name anda!.
+                  </div>
                 </div>
                 <div class="col">
                   <input
                     type="text"
                     class="form-control"
+                    name="last_name"
+                    id="last_name"
                     placeholder="Last name"
                     aria-label="Last name"
                   />
+                  <div class="invalid-feedback" id="last_name_validation">
+                    Masukan Last name anda!.
+                  </div>
                 </div>
               </div>
 
@@ -56,18 +66,27 @@
                 <div class="col">
                   <input
                     type="email"
+                    name="email"
+                    id="email"
                     class="form-control"
                     placeholder="example@gmail.com"
                     aria-label="email"
                   />
+                  <div class="invalid-feedback" id="email_validation">
+                    Masukan email anda!.
+                  </div>
                 </div>
                 <div class="col">
                   <input
                     type="number"
                     class="form-control"
                     placeholder="+62"
+                    name="NomorTelepon"
                     aria-label="phone number"
                   />
+                  <div class="invalid-feedback" id="NomorTelepon_validation">
+                    Masukan nomor telepon anda!.
+                  </div>
                 </div>
               </div>
 
@@ -76,15 +95,24 @@
                   type="password"
                   class="form-control"
                   placeholder="Password"
+                  name="password"
+                  id="password"
                 />
+                <div class="invalid-feedback" id="password_validation">
+                  Masukan password
+                </div>
               </div>
 
               <div class="my-3">
                 <input
                   type="password"
+                  id="conf-password"
                   class="form-control"
-                  placeholder="Konfrimasi password"
+                  placeholder="Konfirmasi password"
                 />
+                <div class="invalid-feedback" id="validation_confpassword">
+                  Masukan password sesuai diatas
+                </div>
               </div>
 
               <div class="form-check">
@@ -101,7 +129,7 @@
               </div>
 
               <div class="d-grid mt-5">
-                <button class="btn" type="submit">Create account</button>
+                <button class="btn" id="btn_register"  type="submit">Create account</button>
               </div>
             </form>
 
@@ -138,7 +166,7 @@
           </div>
         </div>
         <div class="col-6">
-          <div class="wrapper__img__regis d-flex align-items-center h-100">
+          <div class="wrapper_img_regis d-flex align-items-center h-100">
             <img src="./assets/img/regis-img.png" alt="login-img" />
           </div>
         </div>
@@ -156,5 +184,7 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <!-- javascript -->
+    <script src="./assets/js/register.js"></script>
   </body>
 </html>
